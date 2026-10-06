@@ -4,275 +4,695 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hermenegildo Marin Júnior | Backend Software Developer</title>
+  <title>Hermenegildo Marin Júnior | Senior Software Engineer · Technical Leader · System Architect</title>
   <meta name="description"
-    content="Portfolio of Hermenegildo Marin Júnior, Backend Software Developer with expertise in Go, PHP, AWS, Kubernetes, and Cloud Architecture." />
+    content="Resume & Portfolio of Hermenegildo Marin Júnior: Senior Software Engineer, Technical Leader, and System Architect with 15+ years experience in Go, PHP, AWS, Kubernetes, Distributed Systems, and AI-Native Workflows." />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;700;900&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&display=swap"
     rel="stylesheet">
 
   <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-  <!-- Abstract Background Elements -->
-  <div class="bg-shape bg-shape-1"></div>
-  <div class="bg-shape bg-shape-2"></div>
+  <!-- Ambient Background Gradients -->
+  <div class="bg-shape bg-shape-1" aria-hidden="true"></div>
+  <div class="bg-shape bg-shape-2" aria-hidden="true"></div>
+  <div class="bg-shape bg-shape-3" aria-hidden="true"></div>
 
-  <nav class="navbar">
-    <div class="container nav-content">
-      <a href="#" class="logo">Marin.<span>dev</span></a>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#contact" class="btn-primary-sm">Contact</a></li>
-        <li>
-          <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">
-            <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
-            <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
-          </button>
-        </li>
-      </ul>
-    </div>
-  </nav>
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar" id="navbar" aria-label="Main Navigation">
+      <div class="container nav-content">
+        <a href="#" class="logo" aria-label="Hermenegildo Marin Júnior Home">
+          Marin<span class="logo-dot">.dev</span>
+        </a>
+
+        <div class="nav-right">
+          <ul class="nav-links" id="nav-links">
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#highlights" class="nav-link">Highlights</a></li>
+            <li><a href="#skills" class="nav-link">Technical Core</a></li>
+            <li><a href="#experience" class="nav-link">Experience</a></li>
+            <li><a href="#education" class="nav-link">Education</a></li>
+            <li><a href="#contact" class="btn-primary-sm">Get in Touch</a></li>
+          </ul>
+
+          <div class="nav-actions">
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">
+              <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+              </svg>
+              <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+              </svg>
+            </button>
+
+            <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Toggle Mobile Menu" aria-expanded="false">
+              <span class="hamburger-bar"></span>
+              <span class="hamburger-bar"></span>
+              <span class="hamburger-bar"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
 
   <main>
     <!-- Hero Section -->
     <section id="hero" class="hero">
       <div class="container hero-content">
-        <h1 class="reveal-up">Hermenegildo <br /> Marin Júnior</h1>
-        <h2 class="reveal-up delay-1">Backend Software Developer <span class="gradient-text">& AI Champion</span></h2>
-        <p class="hero-desc reveal-up delay-2">
-          Engineering robust backend systems, scalable cloud infrastructure, and event-driven architectures since 2009.
-          From legacy system refactoring to cutting-edge AI integrations.
+        <div class="hero-badge reveal-up">
+          <span class="pulse-dot"></span>
+          <span>Setúbal / Lisbon, Portugal</span>
+          <span class="badge-separator">•</span>
+          <span>15+ Years Experience</span>
+        </div>
+
+        <h1 class="reveal-up delay-1">
+          Hermenegildo <br class="hero-break" />
+          <span class="gradient-text">Marin Júnior</span>
+        </h1>
+
+        <h2 class="hero-role reveal-up delay-2">
+          Senior Software Engineer <span class="role-separator">|</span> Technical Leader <span class="role-separator">|</span> System Architect
+        </h2>
+
+        <p class="hero-desc reveal-up delay-3">
+          Designing high-performance backend systems, distributed cloud architectures, and AI-native workflows across international technology organizations in Europe and LATAM.
         </p>
+
+        <!-- Quick Pillars -->
+        <div class="hero-highlights reveal-up delay-3">
+          <div class="hero-pill">
+            <span class="pill-icon">⚡</span>
+            <span>Scalable Streaming & Payments</span>
+          </div>
+          <div class="hero-pill">
+            <span class="pill-icon">🤖</span>
+            <span>Bedrock AI Champions Network</span>
+          </div>
+          <div class="hero-pill">
+            <span class="pill-icon">☁️</span>
+            <span>AWS & Kubernetes Architect</span>
+          </div>
+          <div class="hero-pill">
+            <span class="pill-icon">🏛️</span>
+            <span>Legacy to Cloud-Native Modernization</span>
+          </div>
+        </div>
+
         <div class="hero-actions reveal-up delay-3">
-          <a href="#contact" class="btn-primary">Let's Connect</a>
-          <div class="social-links">
-            <a href="https://github.com/programadormarin" target="_blank" aria-label="GitHub">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                stroke-linecap="round" stroke-linejoin="round">
-                <path
-                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                </path>
-              </svg>
-            </a>
-            <a href="https://br.linkedin.com/in/hmarinjr" target="_blank" aria-label="LinkedIn">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                stroke-linecap="round" stroke-linejoin="round">
+          <a href="#experience" class="btn-primary">
+            Explore Career Journey
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="7" y1="17" x2="17" y2="7"></line>
+              <polyline points="7 7 17 7 17 17"></polyline>
+            </svg>
+          </a>
+          <a href="#contact" class="btn-secondary">Let's Connect</a>
+
+          <div class="social-links" aria-label="Social and Professional Profiles">
+            <a href="https://linkedin.com/in/hmarinjr" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
                 <rect x="2" y="9" width="4" height="12"></rect>
                 <circle cx="4" cy="4" r="2"></circle>
               </svg>
             </a>
+            <a href="https://github.com/programadormarin" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                </path>
+              </svg>
+            </a>
+            <a href="mailto:programador.marin@gmail.com" aria-label="Email Hermenegildo Marin Júnior">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- About Section -->
+    <!-- Core Career Highlights Section -->
+    <section id="highlights" class="section">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <span class="section-subtitle">Impact & Milestones</span>
+          <h2 class="section-title">Core Career Highlights</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="highlights-grid">
+          <div class="highlight-card glass-card reveal-up">
+            <div class="highlight-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+              </svg>
+            </div>
+            <h3 class="highlight-title">Scalable Streaming & Payments</h3>
+            <p class="highlight-text-desc">
+              Architected mission-critical payment, subscription, and user registration engines in <strong>Go and PHP</strong> powering high-throughput operations for <strong>millions of concurrent viewers</strong>.
+            </p>
+            <div class="highlight-tag-list">
+              <span class="mini-tag">Go</span>
+              <span class="mini-tag">PHP</span>
+              <span class="mini-tag">High Concurrency</span>
+              <span class="mini-tag">Payments Engine</span>
+            </div>
+          </div>
+
+          <div class="highlight-card glass-card reveal-up delay-1">
+            <div class="highlight-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="3"></circle>
+                <path d="M12 2v4m0 12v4M4.93 4.93l2.83 2.83m8.48 8.48l2.83 2.83M2 12h4m12 0h4M4.93 19.07l2.83-2.83m8.48-8.48l2.83-2.83"></path>
+              </svg>
+            </div>
+            <h3 class="highlight-title">Enterprise AI Integration</h3>
+            <p class="highlight-text-desc">
+              Pioneered AI developer tooling and agentic workflow adoption as a core member of the <strong>Bedrock AI Champions Network</strong>, accelerating engineering velocity across multiple squads.
+            </p>
+            <div class="highlight-tag-list">
+              <span class="mini-tag">Bedrock AI Champions</span>
+              <span class="mini-tag">Agentic AI</span>
+              <span class="mini-tag">LLM Automation</span>
+              <span class="mini-tag">Dev Velocity</span>
+            </div>
+          </div>
+
+          <div class="highlight-card glass-card reveal-up delay-2">
+            <div class="highlight-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+              </svg>
+            </div>
+            <h3 class="highlight-title">Strict Regulatory Compliance</h3>
+            <p class="highlight-text-desc">
+              Led technical execution of highly secure web platforms for the <strong>German Public Administration</strong> under rigorous European encryption, security, and host environment compliance constraints.
+            </p>
+            <div class="highlight-tag-list">
+              <span class="mini-tag">Public Sector</span>
+              <span class="mini-tag">EU Compliance</span>
+              <span class="mini-tag">End-to-End Encryption</span>
+              <span class="mini-tag">Strict Security</span>
+            </div>
+          </div>
+
+          <div class="highlight-card glass-card reveal-up delay-3">
+            <div class="highlight-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+            </div>
+            <h3 class="highlight-title">System Modernization</h3>
+            <p class="highlight-text-desc">
+              Successfully refactored monolithic legacy systems into cloud-native microservices and serverless architectures across streaming, public sector, and e-commerce industries.
+            </p>
+            <div class="highlight-tag-list">
+              <span class="mini-tag">Monolith to Microservices</span>
+              <span class="mini-tag">Serverless AWS</span>
+              <span class="mini-tag">Zero-Downtime</span>
+              <span class="mini-tag">DataMesh</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Professional Summary / About Section -->
     <section id="about" class="section">
       <div class="container">
         <div class="section-header reveal-up">
-          <h2 class="section-title">About Me</h2>
+          <span class="section-subtitle">Who I Am</span>
+          <h2 class="section-title">Professional Summary</h2>
           <div class="section-line"></div>
         </div>
-        <div class="about-content glass-card reveal-up">
-          <p>
-            I am a passionate software developer based in Portugal, deeply invested in continuous learning and knowledge
-            sharing. With over 14 years of experience, my core strength lies in <strong>Backend Engineering</strong>,
-            <strong>Cloud Infrastructure</strong>, and <strong>System Architecture</strong>.
-          </p>
-          <p>
-            I take pride in mentoring teams, instituting best practices (TDD, DDD, Clean Code), and driving modern
-            delivery pipelines using Go, PHP, AWS, Kubernetes, and Terraform. Recently, I've been pioneering AI-Native
-            Engineering solutions as an AI Champion.
-          </p>
-          <div class="about-highlights">
-            <div class="highlight-item">
-              <span class="highlight-number">14+</span>
-              <span class="highlight-text">Years Experience</span>
+
+        <div class="about-grid">
+          <div class="about-main glass-card reveal-up">
+            <p class="about-lead">
+              I am a <strong>Technical Leader and Software Engineer with over 15 years of experience</strong> designing high-performance backend systems and driving engineering excellence across international technology organizations in Europe and LATAM.
+            </p>
+
+            <div class="pillars-container">
+              <div class="pillar-item">
+                <div class="pillar-bullet"></div>
+                <div>
+                  <h4>Technical Leadership & Engineering Governance</h4>
+                  <p>Guiding multidisciplinary, cross-border squads; fostering cultures of Clean Code, TDD, DDD, and continuous improvement; standardizing agile engineering practices.</p>
+                </div>
+              </div>
+
+              <div class="pillar-item">
+                <div class="pillar-bullet"></div>
+                <div>
+                  <h4>Distributed Architecture & Cloud Infrastructure</h4>
+                  <p>Microservices, Serverless, Event-Driven Architectures, AWS, Docker, Kubernetes, Terraform, and CI/CD automation.</p>
+                </div>
+              </div>
+
+              <div class="pillar-item">
+                <div class="pillar-bullet"></div>
+                <div>
+                  <h4>Modernization & Transformation</h4>
+                  <p>Refactoring legacy monoliths into cloud-native microservices, orchestrating DataMesh transformations, and embedding AI workflows to maximize developer velocity.</p>
+                </div>
+              </div>
             </div>
-            <div class="highlight-item">
-              <span class="highlight-number">AI</span>
-              <span class="highlight-text">Champion</span>
-            </div>
-            <div class="highlight-item">
-              <span class="highlight-number">AWS</span>
-              <span class="highlight-text">Expertise</span>
+
+            <div class="about-stats">
+              <div class="stat-card">
+                <span class="stat-number">15+</span>
+                <span class="stat-label">Years Experience</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-number">Millions</span>
+                <span class="stat-label">Concurrent Viewers</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-number">AI</span>
+                <span class="stat-label">Champions Network</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-number">EU & LATAM</span>
+                <span class="stat-label">Global Delivery</span>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Skills Section -->
+    <!-- Technical Core Section -->
     <section id="skills" class="section">
       <div class="container">
         <div class="section-header reveal-up">
-          <h2 class="section-title">Technical Arsenal</h2>
+          <span class="section-subtitle">Capabilities & Tooling</span>
+          <h2 class="section-title">Technical Core</h2>
           <div class="section-line"></div>
         </div>
+
         <div class="skills-grid">
           <div class="skill-category glass-card reveal-up">
-            <h3>Backend & Languages</h3>
+            <div class="skill-cat-header">
+              <div class="cat-icon">💻</div>
+              <h3>Languages & Core Tech</h3>
+            </div>
             <div class="tags">
               <span class="tag">Go</span>
-              <span class="tag">PHP</span>
+              <span class="tag">PHP 8.x</span>
               <span class="tag">Node.js</span>
-              <span class="tag">Java</span>
-              <span class="tag">Symfony</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">SQL</span>
               <span class="tag">GraphQL</span>
-              <span class="tag">REST</span>
+              <span class="tag">REST APIs</span>
+              <span class="tag">Symfony</span>
             </div>
           </div>
 
           <div class="skill-category glass-card reveal-up delay-1">
-            <h3>Cloud & DevOps</h3>
+            <div class="skill-cat-header">
+              <div class="cat-icon">☁️</div>
+              <h3>Cloud & Infrastructure</h3>
+            </div>
             <div class="tags">
-              <span class="tag">AWS</span>
+              <span class="tag">AWS Lambda</span>
+              <span class="tag">AWS ECS</span>
+              <span class="tag">DynamoDB</span>
+              <span class="tag">RDS / Aurora</span>
+              <span class="tag">Step Functions</span>
+              <span class="tag">Azure (AKS)</span>
               <span class="tag">Kubernetes</span>
               <span class="tag">Docker</span>
               <span class="tag">Terraform</span>
-              <span class="tag">GitHub Actions</span>
-              <span class="tag">Helm</span>
-              <span class="tag">Azure</span>
-              <span class="tag">Serverless</span>
+              <span class="tag">CloudFormation</span>
+              <span class="tag">Serverless Framework</span>
+              <span class="tag">Helm Charts</span>
             </div>
           </div>
 
           <div class="skill-category glass-card reveal-up delay-2">
-            <h3>Architecture & Data</h3>
+            <div class="skill-cat-header">
+              <div class="cat-icon">🏛️</div>
+              <h3>Architecture & Data</h3>
+            </div>
             <div class="tags">
+              <span class="tag">Distributed Systems</span>
               <span class="tag">Microservices</span>
+              <span class="tag">Event-Driven Architecture</span>
+              <span class="tag">Monolith Modernization</span>
+              <span class="tag">Data Pipelines</span>
               <span class="tag">DataMesh</span>
-              <span class="tag">Event-driven</span>
-              <span class="tag">DDD</span>
-              <span class="tag">MySQL</span>
-              <span class="tag">DynamoDB</span>
+              <span class="tag">Databricks</span>
+              <span class="tag">Kafka</span>
               <span class="tag">Redis</span>
+              <span class="tag">MySQL</span>
               <span class="tag">PostgreSQL</span>
+              <span class="tag">Domain-Driven Design (DDD)</span>
             </div>
           </div>
 
-          <div class="skill-category glass-card reveal-up">
-            <h3>Frontend & Practices</h3>
+          <div class="skill-category glass-card reveal-up delay-3">
+            <div class="skill-cat-header">
+              <div class="cat-icon">🚀</div>
+              <h3>Engineering Practices & AI</h3>
+            </div>
             <div class="tags">
-              <span class="tag">Vanilla JS</span>
-              <span class="tag">HTML5</span>
-              <span class="tag">SASS</span>
-              <span class="tag">Tailwind</span>
-              <span class="tag">JQuery</span>
-              <span class="tag">Bootstrap</span>
-              <span class="tag">React</span>
-              <span class="tag">Next.js</span>
-              <span class="tag">TypeScript</span>
+              <span class="tag highlight-tag">Technical Leadership</span>
+              <span class="tag highlight-tag">AI-Native Workflows</span>
+              <span class="tag highlight-tag">Agentic AI</span>
+              <span class="tag highlight-tag">LLM Automation</span>
+              <span class="tag">GitHub Actions</span>
+              <span class="tag">GitLab CI</span>
+              <span class="tag">Jenkins</span>
               <span class="tag">TDD</span>
               <span class="tag">Clean Code</span>
-              <span class="tag">Agile Methodologies</span>
-              <span class="tag">Code Review</span>
-            </div>
-          </div>
-
-          <div class="skill-category glass-card reveal-up delay-1">
-            <h3>AI & Engineering Leadership</h3>
-            <div class="tags">
-              <span class="tag">AI-Native Engineering</span>
-              <span class="tag">Agentic Workflows</span>
-              <span class="tag">Prompt Engineering</span>
-              <span class="tag">Harness</span>
-              <span class="tag">AI Automation</span>
-              <span class="tag">Tech Leadership</span>
-              <span class="tag">Team Management</span>
-              <span class="tag">Mentoring</span>
+              <span class="tag">Agile Governance</span>
+              <span class="tag">Architectural Decision Records (ADRs)</span>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Experience Section -->
+    <!-- Professional Experience Section -->
     <section id="experience" class="section">
       <div class="container">
         <div class="section-header reveal-up">
-          <h2 class="section-title">Career Journey</h2>
+          <span class="section-subtitle">Track Record</span>
+          <h2 class="section-title">Professional Experience</h2>
           <div class="section-line"></div>
         </div>
 
         <div class="timeline">
-          <!-- Job 1 -->
+          <!-- Job 1: Bedrock Streaming -->
           <div class="timeline-item reveal-up">
             <div class="timeline-dot"></div>
             <div class="timeline-content glass-card">
-              <span class="timeline-date">July 2024 - Present</span>
-              <h3 class="timeline-title">Backend Software Developer <span>@ Bedrock Streaming</span></h3>
-              <p class="timeline-desc">
-                Developing APIs supporting payments, coupons, and user registration using <strong>Go</strong> and PHP.
-                Shaping event-driven architectures (DynamoDB to Databricks) and playing a key role in DataMesh
-                transformation on AWS/Kubernetes. Serving as an <strong>AI Champion</strong>, prototyping AI tools and
-                agentic workflows.
-              </p>
+              <div class="timeline-meta">
+                <span class="timeline-date">Sept 2024 – Present</span>
+                <span class="timeline-loc">📍 Lisbon, Portugal</span>
+              </div>
+              <h3 class="timeline-title">
+                Senior Software Engineer
+                <span class="timeline-company">@ Bedrock Streaming</span>
+              </h3>
+              <ul class="timeline-bullets">
+                <li>Architect and deliver core payment, discount, voucher, and registration backend services in <strong>Go and PHP</strong> within AWS-hosted microservices ecosystems.</li>
+                <li>Build and maintain scalable RESTful and GraphQL APIs supporting <strong>millions of concurrent streaming users</strong> under peak throughput demand.</li>
+                <li>Orchestrate automated cloud infrastructure delivery across <strong>AWS</strong> utilizing <strong>Kubernetes, Terraform, Docker</strong>, and <strong>GitHub Actions</strong> CI/CD pipelines.</li>
+                <li>Co-design event-driven data streaming pipelines integrating <strong>DynamoDB with Databricks</strong> via AWS native event infrastructure in support of enterprise <strong>DataMesh</strong> transformation.</li>
+                <li>Drive AI integration initiatives within the <strong>Bedrock AI Champions Network</strong>, testing agentic workflows, prototyping developer productivity tools, and documenting best practices.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tag-sm">Go</span>
+                <span class="tag-sm">PHP</span>
+                <span class="tag-sm">AWS</span>
+                <span class="tag-sm">Kubernetes</span>
+                <span class="tag-sm">Terraform</span>
+                <span class="tag-sm">DynamoDB</span>
+                <span class="tag-sm">Databricks</span>
+                <span class="tag-sm">DataMesh</span>
+                <span class="tag-sm">Agentic AI</span>
+              </div>
             </div>
           </div>
 
-          <!-- Job 2 -->
+          <!-- Job 2: PrimeIT -->
           <div class="timeline-item reveal-up">
             <div class="timeline-dot"></div>
             <div class="timeline-content glass-card">
-              <span class="timeline-date">March 2024 - June 2024</span>
-              <h3 class="timeline-title">Senior Software Engineer / Tech Lead <span>@ PrimeIT</span></h3>
-              <p class="timeline-desc">
-                Led the development of a complex, highly secure system for the German Public Administration. Enforced
-                DDD, Clean Code, and automated testing. Optimized Symfony 6 and CI/CD pipelines in a constrained
-                environment.
-              </p>
+              <div class="timeline-meta">
+                <span class="timeline-date">Mar 2024 – Aug 2024</span>
+                <span class="timeline-loc">📍 Lisbon, Portugal</span>
+              </div>
+              <h3 class="timeline-title">
+                Sr Software Engineer / Tech Lead
+                <span class="timeline-company">@ PrimeIT</span>
+              </h3>
+              <ul class="timeline-bullets">
+                <li>Directed technical execution for cross-functional engineering teams delivering secure web applications for the <strong>German Public Administration</strong>.</li>
+                <li>Architected end-to-end secure data processing pipelines adhering to stringent European compliance, encryption, and host environment mandates.</li>
+                <li>Championed software quality standards across squads using <strong>PHP 8 (Symfony 6), AWS, Domain-Driven Design (DDD), TDD, Clean Code</strong>, and automated GitLab CI/Jenkins quality gates.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tag-sm">Technical Leadership</span>
+                <span class="tag-sm">PHP 8 / Symfony 6</span>
+                <span class="tag-sm">AWS</span>
+                <span class="tag-sm">DDD</span>
+                <span class="tag-sm">TDD</span>
+                <span class="tag-sm">EU Compliance</span>
+                <span class="tag-sm">GitLab CI</span>
+              </div>
             </div>
           </div>
 
-          <!-- Job 3 -->
+          <!-- Job 3: CI&T -->
           <div class="timeline-item reveal-up">
             <div class="timeline-dot"></div>
             <div class="timeline-content glass-card">
-              <span class="timeline-date">March 2021 - Feb 2024</span>
-              <h3 class="timeline-title">Senior Full Stack Engineer / Tech Lead <span>@ CI&T</span></h3>
-              <p class="timeline-desc">
-                Managed headless Drupal architectures and React/NextJS frontends. Architected and deployed
-                <strong>Node.js Serverless</strong> applications on AWS (Lambda, Step Functions, CloudFormation) with
-                Jenkins and Terraform.
-              </p>
+              <div class="timeline-meta">
+                <span class="timeline-date">Mar 2021 – Feb 2024</span>
+                <span class="timeline-loc">📍 Lisbon, Portugal</span>
+              </div>
+              <h3 class="timeline-title">
+                Sr Full Stack Engineer / Tech Lead
+                <span class="timeline-company">@ CI&T</span>
+              </h3>
+              <ul class="timeline-bullets">
+                <li>Engineered serverless backend platforms on AWS using <strong>Node.js, TypeScript, AWS Lambda, Step Functions, CloudFormation</strong>, and Serverless Framework.</li>
+                <li>Designed high-volume API integrations and decoupled headless CMS architectures utilizing <strong>Drupal, Apigee API Gateway, Platform.sh</strong>, and <strong>React/Next.js</strong>.</li>
+                <li>Led greenfield architecture design, requirements discovery, and deployment pipelines via <strong>Terraform and Jenkins</strong> for enterprise clients.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tag-sm">AWS Lambda</span>
+                <span class="tag-sm">Step Functions</span>
+                <span class="tag-sm">TypeScript</span>
+                <span class="tag-sm">Node.js</span>
+                <span class="tag-sm">Terraform</span>
+                <span class="tag-sm">Next.js / React</span>
+                <span class="tag-sm">Apigee</span>
+              </div>
             </div>
           </div>
 
-          <!-- Job 4 -->
+          <!-- Job 4: Docler Holding -->
           <div class="timeline-item reveal-up">
             <div class="timeline-dot"></div>
             <div class="timeline-content glass-card">
-              <span class="timeline-date">June 2019 - Feb 2021</span>
-              <h3 class="timeline-title">Software Engineer <span>@ Docler Holding</span></h3>
-              <p class="timeline-desc">
-                Focused on DevOps and deployment tooling. Wrote automated tests and microservices in PHP and Go. Managed
-                Kubernetes (AKS), Helm, and Docker infrastructure on Azure.
-              </p>
+              <div class="timeline-meta">
+                <span class="timeline-date">Jun 2019 – Feb 2021</span>
+                <span class="timeline-loc">📍 Luxembourg</span>
+              </div>
+              <h3 class="timeline-title">
+                Software Engineer (DevOps & Tooling)
+                <span class="timeline-company">@ Docler Holding</span>
+              </h3>
+              <ul class="timeline-bullets">
+                <li>Built custom developer tooling, automation frameworks, and internal delivery systems using <strong>Go, PHP, Node.js</strong>, and Bash scripting.</li>
+                <li>Managed enterprise Kubernetes clusters on <strong>Azure (AKS)</strong> utilizing <strong>Helm Charts, Docker</strong>, and Bamboo Specs.</li>
+                <li>Executed zero-downtime framework migrations, upgrading legacy core applications.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tag-sm">Go</span>
+                <span class="tag-sm">DevOps & Tooling</span>
+                <span class="tag-sm">Azure (AKS)</span>
+                <span class="tag-sm">Kubernetes</span>
+                <span class="tag-sm">Helm</span>
+                <span class="tag-sm">Docker</span>
+              </div>
             </div>
           </div>
 
-          <!-- Job 5 -->
+          <!-- Job 5: A2C -->
           <div class="timeline-item reveal-up">
             <div class="timeline-dot"></div>
             <div class="timeline-content glass-card">
-              <span class="timeline-date">Prior to 2019</span>
-              <h3 class="timeline-title">Various Senior Roles <span>@ A2C, Uniasselvi, Inteligência Web, Quality
-                  Sistemas</span></h3>
-              <p class="timeline-desc">
-                Over a decade spent leading development teams, instituting Agile methodologies, building scalable
-                RESTful APIs, and refactoring legacy PHP/Symfony systems into modern architectures with strong OOP/DDD
-                principles.
-              </p>
+              <div class="timeline-meta">
+                <span class="timeline-date">Apr 2018 – Jun 2019</span>
+                <span class="timeline-loc">📍 Joinville, Brazil</span>
+              </div>
+              <h3 class="timeline-title">
+                Senior Software Engineer
+                <span class="timeline-company">@ A2C</span>
+              </h3>
+              <ul class="timeline-bullets">
+                <li>Developed robust Drupal 8 solutions, migrated legacy systems, and established cloud infrastructure best practices for multi-site deployments.</li>
+                <li>Mentored engineering teams in Clean Code principles, security vulnerability mitigation, and architectural patterns.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tag-sm">Drupal 8</span>
+                <span class="tag-sm">Cloud Best Practices</span>
+                <span class="tag-sm">Clean Code</span>
+                <span class="tag-sm">Mentoring</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Job 6: Capitani -->
+          <div class="timeline-item reveal-up">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass-card">
+              <div class="timeline-meta">
+                <span class="timeline-date">May 2017 – Apr 2018</span>
+                <span class="timeline-loc">📍 Santa Catarina, Brazil</span>
+              </div>
+              <h3 class="timeline-title">
+                Senior Software Engineer
+                <span class="timeline-company">@ Capitani</span>
+              </h3>
+              <ul class="timeline-bullets">
+                <li>Enhanced core E-Learning platform modules utilizing <strong>PHP, JavaScript, Node.js</strong>, and complex Oracle 12c procedures.</li>
+                <li>Introduced Git-Flow workflows, code refactoring standards, and agile collaboration in a fast-paced EdTech startup environment.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tag-sm">PHP</span>
+                <span class="tag-sm">Oracle 12c</span>
+                <span class="tag-sm">Node.js</span>
+                <span class="tag-sm">Git-Flow</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Job 7: Inteligência Web -->
+          <div class="timeline-item reveal-up">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass-card">
+              <div class="timeline-meta">
+                <span class="timeline-date">Dec 2014 – May 2017</span>
+                <span class="timeline-loc">📍 SC, Brazil</span>
+              </div>
+              <h3 class="timeline-title">
+                Principal Software Engineer
+                <span class="timeline-company">@ Inteligência Web</span>
+              </h3>
+              <ul class="timeline-bullets">
+                <li>Architected and modernized a high-scale academic event management platform using <strong>PHP, JavaScript, and MySQL</strong>.</li>
+                <li>Built a centralized, highly reliable RESTful payment gateway and established engineering governance, SDLC standards, and <strong>Architectural Decision Records (ADRs)</strong>.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tag-sm">System Architecture</span>
+                <span class="tag-sm">Payment Gateway</span>
+                <span class="tag-sm">SDLC Governance</span>
+                <span class="tag-sm">ADRs</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Job 8: Prior Engineering Experience -->
+          <div class="timeline-item reveal-up">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass-card prior-experience-card">
+              <div class="timeline-meta">
+                <span class="timeline-date">2010 – 2014</span>
+                <span class="timeline-loc">📍 Brazil</span>
+              </div>
+              <h3 class="timeline-title">Prior Engineering Experience</h3>
+              <div class="prior-roles">
+                <div class="prior-role-item">
+                  <strong>System Analyst / Tech Lead</strong> @ Quality Sistemas (Nov 2012 – Nov 2014)
+                  <p>Introduced Symfony 2, TDD, DDD, Scrum, and Cloud infrastructure for municipal systems.</p>
+                </div>
+                <div class="prior-role-item">
+                  <strong>Web Developer</strong> @ Gestão Ativa, Softnex Tecnologia, Vento Tecnologia (2010 – 2012)
+                  <p>Developed credit card processing systems, e-commerce backends, and automated CI/CD pipelines.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education, Certifications & Languages Section -->
+    <section id="education" class="section">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <span class="section-subtitle">Credentials & International Readiness</span>
+          <h2 class="section-title">Education & Certifications</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="edu-grid">
+          <!-- Education Card -->
+          <div class="edu-card glass-card reveal-up">
+            <div class="edu-header">
+              <div class="edu-icon">🎓</div>
+              <div>
+                <span class="edu-type">Higher Education</span>
+                <h3>Associate Degree in Information Technology</h3>
+                <span class="edu-inst">Senac SC, Brazil • 2009 – 2011</span>
+              </div>
+            </div>
+            <p class="edu-desc">Comprehensive computer science foundation covering algorithms, object-oriented programming, relational database engineering, networking, and system analysis.</p>
+          </div>
+
+          <!-- Certification Card -->
+          <div class="edu-card glass-card reveal-up delay-1">
+            <div class="edu-header">
+              <div class="edu-icon">📜</div>
+              <div>
+                <span class="edu-type">Professional Certification</span>
+                <h3>GenAI: The Art of Prompting for Tech / Engineering</h3>
+                <span class="edu-inst">Professional Engineering Certification</span>
+              </div>
+            </div>
+            <p class="edu-desc">Advanced techniques for prompt engineering, agentic AI workflows, LLM orchestration, and generative AI developer velocity tooling.</p>
+          </div>
+
+          <!-- Languages Card -->
+          <div class="edu-card glass-card full-width-card reveal-up delay-2">
+            <div class="edu-header">
+              <div class="edu-icon">🌐</div>
+              <div>
+                <span class="edu-type">Global Communication</span>
+                <h3>Languages</h3>
+                <span class="edu-inst">Multilingual communication for international teams</span>
+              </div>
+            </div>
+            <div class="languages-grid">
+              <div class="lang-item">
+                <span class="lang-name">Portuguese</span>
+                <span class="lang-level native">Native</span>
+              </div>
+              <div class="lang-item">
+                <span class="lang-name">English</span>
+                <span class="lang-level fluent">Full Professional</span>
+              </div>
+              <div class="lang-item">
+                <span class="lang-name">Spanish</span>
+                <span class="lang-level working">Working Proficiency</span>
+              </div>
+              <div class="lang-item">
+                <span class="lang-name">French & German</span>
+                <span class="lang-level elementary">Elementary</span>
+              </div>
             </div>
           </div>
         </div>
@@ -283,28 +703,63 @@
     <section id="contact" class="section">
       <div class="container">
         <div class="contact-box glass-card reveal-up">
-          <h2 class="contact-title">Let's Build Something Amazing.</h2>
-          <p>I'm always open to discussing backend architectures, AI innovations, or new engineering challenges.</p>
+          <span class="section-subtitle">Get in Touch</span>
+          <h2 class="contact-title">Let's Build Scalable Systems Together.</h2>
+          <p class="contact-subtitle">
+            Whether you want to discuss high-throughput distributed systems, AI-native engineering transformations, or technical leadership opportunities, I'd love to connect.
+          </p>
+
+          <div class="contact-details">
+            <div class="contact-detail-item">
+              <span class="contact-detail-icon">📍</span>
+              <span>Setúbal / Lisbon, Portugal</span>
+            </div>
+            <div class="contact-detail-item">
+              <span class="contact-detail-icon">✉️</span>
+              <a href="mailto:programador.marin@gmail.com">programador.marin@gmail.com</a>
+            </div>
+          </div>
+
           <div class="contact-links">
-            <a href="mailto:programador.marin@gmail.com" class="btn-primary">
+            <a href="mailto:programador.marin@gmail.com" class="btn-primary" id="email-btn">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                stroke-linecap="round" stroke-linejoin="round">
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
                 <polyline points="22,6 12,13 2,6"></polyline>
               </svg>
-              Email Me
+              Send Email
             </a>
-            <a href="https://br.linkedin.com/in/hmarinjr" target="_blank" class="btn-secondary">LinkedIn</a>
-            <a href="https://github.com/programadormarin" target="_blank" class="btn-secondary">GitHub</a>
+            <a href="https://linkedin.com/in/hmarinjr" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+              LinkedIn Profile
+            </a>
+            <a href="https://github.com/programadormarin" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+              </svg>
+              GitHub
+            </a>
           </div>
         </div>
       </div>
     </section>
   </main>
 
+  <!-- Footer -->
   <footer>
     <div class="container footer-content">
-      <p>&copy; 2026 Hermenegildo Marin Júnior. Built with modern web technologies.</p>
+      <div class="footer-top">
+        <a href="#" class="logo">Marin<span class="logo-dot">.dev</span></a>
+        <p class="footer-role">Hermenegildo Marin Júnior — Senior Software Engineer · Technical Leader · System Architect</p>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Hermenegildo Marin Júnior. All rights reserved.</p>
+        <p class="footer-location">Setúbal / Lisbon, Portugal</p>
+      </div>
     </div>
   </footer>
 
